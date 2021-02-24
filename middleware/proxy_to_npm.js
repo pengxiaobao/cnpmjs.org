@@ -71,13 +71,13 @@ module.exports = function (options) {
       }
     }
 
-    if (isPublich || isPublichScoped) {
-      var url = redirectUrl + this.url;
-      debug('proxy isPublich: %s, isPublichScoped: %s, package to %s',
-        isPublich, isPublichScoped, url);
-      this.redirect(url);
-      return;
-    }
+    // if (isPublich || isPublichScoped) {
+    //   var url = redirectUrl + this.url;
+    //   debug('proxy isPublich: %s, isPublichScoped: %s, package to %s',
+    //     isPublich, isPublichScoped, url);
+    //   this.redirect(url);
+    //   return;
+    // }
 
     yield next;
   };
